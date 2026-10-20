@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Src/" />
+  <Folder Name="/Src/Common/" />
+  <Folder Name="/Src/EndPoints/" />
+  <Folder Name="/Src/Modules/" />
+  <Folder Name="/Src/Modules/Blog/">
+    <Project Path="Src/Modules/Blog/Blog/Blog.csproj" />
+  </Folder>
+</Solution>
