@@ -1,6 +1,10 @@
 <Solution>
   <Folder Name="/Src/" />
-  <Folder Name="/Src/Common/" />
+  <Folder Name="/Src/Common/">
+    <Project Path="Src/Common/Common.Application/Common.Application.csproj" />
+    <Project Path="Src/Common/Common.Domain/Common.Domain.csproj" />
+    <Project Path="Src/Common/Common.Infrastructure/Common.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/Src/EndPoints/" />
   <Folder Name="/Src/Modules/" />
   <Folder Name="/Src/Modules/Blog/">
