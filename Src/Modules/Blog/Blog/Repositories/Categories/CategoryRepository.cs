@@ -14,5 +14,6 @@ namespace Blog.Services.Categories
         {
             Context.Categories.Remove(category);
         }
+
     }
 }

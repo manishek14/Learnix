@@ -1,4 +1,5 @@
 ﻿using Blog.Context;
+using Blog.Domain;
 using Common.Infrastructure.Repository;
 
 namespace Blog.Services.Posts
@@ -7,6 +8,12 @@ namespace Blog.Services.Posts
     {
         public PostRepository(BlogConext context) : base(context)
         {
+
+        }
+
+        public void Delete(Post post)
+        {
+            Context.Posts.Remove(post);
         }
     }
 }

@@ -15,6 +15,10 @@ public interface IBaseRepository<T> where T : BaseEntity
 
     void Update(T entity);
 
+    void Delete(T entity);              // ← جدید
+
+    Task<List<T>> GetAllAsync();        // ← جدید
+
     Task<int> Save();
     void SaveSync();
 
@@ -31,5 +35,4 @@ public interface IMongoRepository<TEntity> where TEntity : BaseEntity
     Task<TEntity?> GetById(Guid id);
     Task Insert(TEntity entity);
     Task Update(TEntity entity);
-
 }

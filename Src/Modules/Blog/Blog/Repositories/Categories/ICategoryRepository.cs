@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Blog.Services.Categories
 {
-    interface ICategoryRepository : IBaseRepository<Category>
+    public interface ICategoryRepository : IBaseRepository<Category>
     {
         void Delete(Category category);
     }
