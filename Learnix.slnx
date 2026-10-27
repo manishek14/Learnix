@@ -10,4 +10,7 @@
   <Folder Name="/Src/Modules/Blog/">
     <Project Path="Src/Modules/Blog/Blog/Blog.csproj" />
   </Folder>
+  <Folder Name="/Src/Modules/Ticket/">
+    <Project Path="Src/Modules/Ticket/Ticket.csproj" />
+  </Folder>
 </Solution>
