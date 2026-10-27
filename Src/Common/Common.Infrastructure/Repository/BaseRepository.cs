@@ -37,6 +37,17 @@ public  class BaseRepository<T, TContext> : IBaseRepository<T>
     {
         Context.Update(entity);
     }
+
+    public void Delete(T entity)
+    {
+        Context.Set<T>().Remove(entity);
+    }
+
+    public async Task<List<T>> GetAllAsync()
+    {
+        return await Context.Set<T>().AsNoTracking().ToListAsync();
+    }
+
     public async Task<int> Save()
     {
         return await Context.SaveChangesAsync();

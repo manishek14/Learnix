@@ -10,7 +10,4 @@
   <Folder Name="/Src/Modules/Blog/">
     <Project Path="Src/Modules/Blog/Blog/Blog.csproj" />
   </Folder>
-  <Folder Name="/Src/Modules/Ticket/">
-    <Project Path="Src/Modules/Ticket/Ticket/Ticket.csproj" Id="bed4c3ba-15ad-4bdb-886a-dc4157173caf" />
-  </Folder>
 </Solution>
