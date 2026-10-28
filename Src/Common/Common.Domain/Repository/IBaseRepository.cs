@@ -8,6 +8,12 @@ public interface IBaseRepository<T> where T : BaseEntity
 
     Task<T?> GetTracking(Guid id);
 
+    Task<T?> GetByConditionAsync(Expression<Func<T, bool>> expression);
+
+    Task<List<T>> GetListAsync(Expression<Func<T, bool>> expression);
+
+    Task<List<T>> GetAllAsync();
+
     Task AddAsync(T entity);
     void Add(T entity);
 
@@ -15,9 +21,7 @@ public interface IBaseRepository<T> where T : BaseEntity
 
     void Update(T entity);
 
-    void Delete(T entity);              // ← جدید
-
-    Task<List<T>> GetAllAsync();        // ← جدید
+    void Delete(T entity);
 
     Task<int> Save();
     void SaveSync();

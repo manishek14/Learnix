@@ -13,4 +13,11 @@
   <Folder Name="/Src/Modules/Ticket/">
     <Project Path="Src/Modules/Ticket/Ticket.csproj" />
   </Folder>
+  <Folder Name="/Src/Modules/User/" />
+  <Folder Name="/Src/Modules/User/UserModules.Core/">
+    <Project Path="Src/Modules/User/UserModules.Core/UserModules.Core/UserModules.Core.csproj" Id="277f8370-7af6-410f-868d-515ebc8e3f69" />
+  </Folder>
+  <Folder Name="/Src/Modules/User/UserModules.Data/">
+    <Project Path="Src/Modules/User/UserModules.Data/UserModules.Data.csproj" Id="ac0d66a1-8dd0-4013-bc69-db48ff685f9c" />
+  </Folder>
 </Solution>

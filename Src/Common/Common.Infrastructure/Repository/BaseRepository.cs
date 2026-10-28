@@ -21,6 +21,14 @@ public  class BaseRepository<T, TContext> : IBaseRepository<T>
     {
         return await Context.Set<T>().AsTracking().FirstOrDefaultAsync(t => t.Id.Equals(id));
     }
+    public async Task<T?> GetByConditionAsync(Expression<Func<T, bool>> expression)
+    {
+        return await Context.Set<T>().AsNoTracking().FirstOrDefaultAsync(expression);
+    }
+    public async Task<List<T>> GetListAsync(Expression<Func<T, bool>> expression)
+    {
+        return await Context.Set<T>().AsNoTracking().Where(expression).ToListAsync();
+    }
     public void Add(T entity)
     {
         Context.Set<T>().Add(entity);
