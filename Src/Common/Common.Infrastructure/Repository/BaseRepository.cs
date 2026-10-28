@@ -25,6 +25,10 @@ public  class BaseRepository<T, TContext> : IBaseRepository<T>
     {
         return await Context.Set<T>().AsNoTracking().FirstOrDefaultAsync(expression);
     }
+    public async Task<int> CountAsync(Expression<Func<T, bool>> expression)
+    {
+        return await Context.Set<T>().CountAsync(expression);
+    }
     public async Task<List<T>> GetListAsync(Expression<Func<T, bool>> expression)
     {
         return await Context.Set<T>().AsNoTracking().Where(expression).ToListAsync();

@@ -14,6 +14,7 @@ public interface IBaseRepository<T> where T : BaseEntity
 
     Task<List<T>> GetAllAsync();
 
+    Task<int> CountAsync(Expression<Func<T, bool>> expression);
     Task AddAsync(T entity);
     void Add(T entity);
 
