@@ -1,7 +1,7 @@
 ﻿using Common.Domain;
 using Common.Domain.Exceptions;
 
-namespace Course.Data.Entities
+namespace Course.Entities
 {
     public class UserCourse : BaseEntity
     {

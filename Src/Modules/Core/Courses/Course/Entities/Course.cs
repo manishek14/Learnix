@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Course.Data.Entities
+namespace Course.Entities
 {
     public class Course : BaseEntity
     {

@@ -2,7 +2,7 @@
 using Common.Domain.Exceptions;
 using System.ComponentModel.DataAnnotations;
 
-namespace Course.Data.Entities
+namespace Course.Entities
 {
     public class CourseSection : BaseEntity
     {
