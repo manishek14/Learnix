@@ -2,6 +2,7 @@
 using Course.DomainService;
 using Course.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Course
