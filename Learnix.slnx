@@ -10,6 +10,10 @@
   <Folder Name="/Src/Modules/Blog/">
     <Project Path="Src/Modules/Blog/Blog/Blog.csproj" />
   </Folder>
+  <Folder Name="/Src/Modules/Core/" />
+  <Folder Name="/Src/Modules/Core/Courses/">
+    <Project Path="Src/Modules/Core/Courses/Course/Course.csproj" Id="9dc1e553-5ab6-4ea6-8312-492b6e0a163f" />
+  </Folder>
   <Folder Name="/Src/Modules/Notification/">
     <Project Path="Src/Modules/Notification/Notification/Notification.csproj" Id="e86b54d8-3a38-49db-a922-39979f85dc7e" />
   </Folder>
